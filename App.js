@@ -9,9 +9,10 @@ import AccountScreen from './src/screens/AccountScreen';
 import TrackListScreen from './src/screens/TrackListScreen';
 import TrackCreateScreen from './src/screens/TrackCreateScreen';
 import TrackDetailScreen from './src/screens/TrackDetailScreen';
-
+import LaunchScreen from './src/screens/LaunchScreen';
 
 const switchNavigator = createSwitchNavigator({
+  Launch: { screen: LaunchScreen},
   loginFlow: createStackNavigator({
     Signup: { screen: SignupScreen },
     Signin: { screen: SigninScreen }
